@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "push-fcm-payload"
+    "football": "football-fav-app",
+    "default": "football-fav-app"
   }
 }

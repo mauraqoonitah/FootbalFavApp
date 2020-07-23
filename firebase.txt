@@ -1,2 +1,0 @@
-
-Hosting URL: https://push-fcm-payload.web.app

@@ -8,7 +8,7 @@ if (!('serviceWorker' in navigator)) {
 }
 // Register service worker
 function registerServiceWorker() {
-    return navigator.serviceWorker.register('/service-worker.js')
+    return navigator.serviceWorker.register('service-worker.js')
         .then(function(registration) {
             return registration;
         })
@@ -91,8 +91,8 @@ function showNotification(text) {
     const title = "Football App Notification"
     const options = {
         body: text,
-        badge: '/img/icons/icon.png',
-        icon: '/img/background2.jpg',
+        badge: './img/icons/icon.png',
+        icon: './img/background2.jpg',
 
     };
     if (Notification.permission === 'granted') {
