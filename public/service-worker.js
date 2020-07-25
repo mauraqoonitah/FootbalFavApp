@@ -5,42 +5,44 @@ if (workbox) {
     console.log(`🎉🎉 Yay! Workbox is loaded 🎉🎉`);
     // workbox caching
     workbox.precaching.precacheAndRoute([
-        { url: "./", revision: '5' },
-        { url: "./nav.html", revision: '5' },
-        { url: "./index.html", revision: '5' },
-        { url: "./pages/favorite.html", revision: '5' },
-        { url: "./pages/home.html", revision: '5' },
-        { url: "./pages/klasemen.html", revision: '5' },
-        { url: "./pages/teams.html", revision: '5' },
-        { url: "./css/materialize.min.css", revision: '5' },
-        { url: "./manifest.json", revision: '5' },
-        { url: "./js/materialize.min.js", revision: '5' },
-        { url: "./js/api.js", revision: '5' },
-        { url: "./js/db.js", revision: '5' },
-        { url: "./js/idb.js", revision: '5' },
-        { url: "./js/nav.js", revision: '5' },
-        { url: "./js/script.js", revision: '5' },
-        { url: "./js/notification.js", revision: '5' },
-        { url: "./push.js", revision: '5' },
-        { url: "./img/icons/icon.png", revision: '5' },
-        { url: "./img/icons/icon-72x72.png", revision: '5' },
-        { url: "./img/icons/icon-96x96.png", revision: '5' },
-        { url: "./img/icons/icon-128x128.png", revision: '5' },
-        { url: "./img/icons/icon-144x144.png", revision: '5' },
-        { url: "./img/icons/icon-152x152.png", revision: '5' },
-        { url: "./img/icons/icon-192x192.png", revision: '5' },
-        { url: "./img/icons/icon-384x384.png", revision: '5' },
-        { url: "./img/icons/icon-512x512.png", revision: '5' },
-        { url: "./img/background1.jpg", revision: '5' },
-        { url: "./img/background2.jpg", revision: '5' },
-        { url: "./img/background3.jpg", revision: '5' },
-        { url: "https://fonts.googleapis.com/icon?family=Material+Icons", revision: '5' },
+        { url: "./", revision: '6' },
+        { url: "./nav.html", revision: '6' },
+        { url: "./index.html", revision: '6' },
+        { url: "./pages/favorite.html", revision: '6' },
+        { url: "./pages/home.html", revision: '6' },
+        { url: "./pages/klasemen.html", revision: '6' },
+        { url: "./pages/teams.html", revision: '6' },
+        { url: "./css/materialize.min.css", revision: '6' },
+        { url: "./manifest.json", revision: '6' },
+        { url: "./js/materialize.min.js", revision: '6' },
+        { url: "./js/api.js", revision: '6' },
+        { url: "./js/db.js", revision: '6' },
+        { url: "./js/idb.js", revision: '6' },
+        { url: "./js/nav.js", revision: '6' },
+        { url: "./js/script.js", revision: '6' },
+        { url: "./js/notification.js", revision: '6' },
+        { url: "../push.js", revision: '6' },
+        { url: "./img/icons/icon.png", revision: '6' },
+        { url: "./img/icons/icon-72x72.png", revision: '6' },
+        { url: "./img/icons/icon-96x96.png", revision: '6' },
+        { url: "./img/icons/icon-128x128.png", revision: '6' },
+        { url: "./img/icons/icon-144x144.png", revision: '6' },
+        { url: "./img/icons/icon-152x152.png", revision: '6' },
+        { url: "./img/icons/icon-192x192.png", revision: '6' },
+        { url: "./img/icons/icon-384x384.png", revision: '6' },
+        { url: "./img/icons/icon-512x512.png", revision: '6' },
+        { url: "./img/background1.jpg", revision: '6' },
+        { url: "./img/background2.jpg", revision: '6' },
+        { url: "./img/background3.jpg", revision: '6' },
+        { url: "https://fonts.googleapis.com/icon?family=Material+Icons", revision: '6' },
         {
             url: "https://fonts.gstatic.com/s/materialicons/v53/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2",
-            revision: '5'
+            revision: '6'
         }
 
-    ]);
+    ], {
+        ignoreURLParametersMatching: [/.*/]
+    });
     workbox.routing.registerRoute(
         new RegExp('https://api.football-data.org/v2'),
         workbox.strategies.staleWhileRevalidate({
