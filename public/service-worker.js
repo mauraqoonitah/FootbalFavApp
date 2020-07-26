@@ -21,7 +21,6 @@ if (workbox) {
         { url: "./js/nav.js", revision: '6' },
         { url: "./js/script.js", revision: '6' },
         { url: "./js/notification.js", revision: '6' },
-        { url: "../push.js", revision: '6' },
         { url: "./img/icons/icon.png", revision: '6' },
         { url: "./img/icons/icon-72x72.png", revision: '6' },
         { url: "./img/icons/icon-96x96.png", revision: '6' },
