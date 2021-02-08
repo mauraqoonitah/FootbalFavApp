@@ -1,5 +1,5 @@
 ## [Submission Dicoding PWA](https://www.dicoding.com/academies/74)  </a> - Football Fav App
-App for your own by personalizing your favorite football teams to see their latest info and one-click access to their page.
+App for your own by personalizing your favorite football teams to see their latest info and one-click access to their page. Implementing PWA characteristics such as shell apps, offline capability, push notification, and installable web apps.
 
 ### 
 > - Progressive Web Apps (PWA)
